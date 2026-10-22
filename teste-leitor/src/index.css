@@ -109,3 +109,40 @@ code {
   padding: 4px 8px;
   background: var(--code-bg);
 }
+
+/* Animações para a Mira / ROI do Leitor de Código de Barras */
+@keyframes laserSweep {
+  0% {
+    top: 8%;
+    opacity: 0.7;
+  }
+  50% {
+    top: 92%;
+    opacity: 1;
+  }
+  100% {
+    top: 8%;
+    opacity: 0.7;
+  }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 8px 2px rgba(255, 23, 68, 0.9), 0 0 18px 4px rgba(255, 23, 68, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 12px 3px rgba(255, 23, 68, 1), 0 0 24px 6px rgba(255, 23, 68, 0.7);
+  }
+}
+
+@keyframes successFlash {
+  0% {
+    border-color: #00e676 !important;
+    box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.6), 0 0 25px #00e676 !important;
+  }
+  100% {
+    border-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.55);
+  }
+}
+

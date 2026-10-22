@@ -1,9 +1,9 @@
-import { LeitorCameraIP } from './LeitorCodigo'; //Era LeitorCodigo
+import { LeitorCodigo } from './LeitorCodigo';
 
-function App(){
+function App() {
   return (
-    <div>
-      <LeitorCameraIP/>
+    <div style={{ minHeight: '100vh', backgroundColor: '#f8fafc', padding: '24px 12px', boxSizing: 'border-box' }}>
+      <LeitorCodigo />
     </div>
   );
 }
